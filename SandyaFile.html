@@ -1,1 +1,93 @@
 <h1>Sandya Persaud Story</h1>
+<!DOCTYPE html>
+
+<head>
+<meta name="viewport" content="width=device-width" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<link href="https://fonts.googleapis.com/css?family=Berkshire+Swash|Nanum+Brush+Script" rel="stylesheet">
+<script src="/assets/jquery.js"></script>
+<style>
+body {
+  text-align: center;
+  font-family: 'Berkshire Swash', cursive;
+  font-size: 40px;
+  background: pink;
+  color: green;
+}
+button {
+  margin: 40px;
+}
+input {
+  font-size: 35px;
+}
+.fill {
+  background: pink;
+  color: blue;
+  border-bottom: 2px white solid;
+  font-family: 'Nanum Brush Script', cursive;
+  padding: 0 6px;
+  margin: 4px;
+}
+</style>
+</head>
+
+<body>
+<div class="prompt"></div>
+<button>Next</button>
+<script>
+// List of prompts for the user
+var prompts = [
+	'Type a boy name',
+	'Type a color',
+	'Type an insect',
+	'Type an animal',
+	'Type a girl name',
+	'Type a planet',
+	'Type a item',
+	'Type your favorite food', 
+	'Type your favorite drink',
+	'Type your favorite show',
+	'Type your favorite candy',
+	'Type a emotional adjective)'
+   ];
+
+var answers=[];
+// Keep track of current prompt we're on
+var currentPrompt = 0;
+
+// A function that will call the next prompt
+var nextPrompt = function() {
+  //if there's no answer in the form
+  if (currentPrompt != 0){
+    answers.push($('input').val());
+  }
+	// if there is a next prompt
+	if (currentPrompt < prompts.length) {
+		// put first prompt in all html elements with class 
+		$('.prompt').html(prompts[currentPrompt] +'<br><input type="text">');
+		// move the next prompt into variable currentPrompt 
+		currentPrompt = currentPrompt + 1;
+	}
+	//or else if we're at the end of the array
+	else {
+		// put a new message into the html.
+		showFinal();
+	}
+}
+
+//puts user answers into HTML
+var showFinal = function() {
+  $('.prompt').html('Superhero <span class="fill">'+answers[0]+'</span> was the bravest superhero in town. He flew around the country with his distinctive <span class="fill">'+answers[1]+'</span> cape flapping in the wind, rescuing anyone in trouble. Last week he rescued a <span class="fill">'+answers[2]+'</span> before it got squashed and the week before he helped a <span class="fill">'+answers[3]+'</span> which had lost its mother. One day he noticed that <span class="fill">'+answers[4]+'</span> was caught in a huge rainstorm and had forgotten her raincoat. Superhero <span class="fill">'+answers[0]+'</span> swooped down, grabbed hold of her hands and flew them back to his secret hideout on <span class="fill">'+answers[5]+'</span> .He let her play with his <span class="fill">'+answers[6]+'</span> and together they ate lots of <span class="fill">'+answers[7]+'</span> and drank gallons of <span class="fill">'+answers[8]+'</span>. They watched <span class="fill">'+answers[9]+'</span> on television. Soon it was time to go and she stuffed her poket with <span class="fill">'+answers[10]+'</span> to eat on the way. Everyone was <span class="fill">'+answers[11]+'</span> and it was another successful mission for <span class="fill">'+answers[0]+'</span> .');
+  //and then hide the button
+  $('button').hide();
+}
+// run nextPrompt function when button is clicked
+$('button').click(function() {
+	nextPrompt();
+});
+// sites.google.com/site/jgsprogrammingtechnlogies Unit 3 links 01/20/18-02/01/18
+// Show the first prompt as soon as js loads
+nextPrompt();
+</script>
+</body>
