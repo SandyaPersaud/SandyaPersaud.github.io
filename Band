@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Theme Made By www.w3schools.com - No Copyright -->
+  <title>Thorns N' Roses</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Nanum+Brush+Script" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Monoton" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Rock+Salt" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans+SC" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Playfair+Display+SC" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Russo+One" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Special+Elite" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Abril+Fatface" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+  body {
+      font: 400 15px/1.8 Lato, sans-serif;
+      color: #536998;
+  }
+  h3, h4 {
+      margin: 10px 0 30px 0;
+      letter-spacing: 10px;      
+      font-size: 30px;
+      color: #7D1935;
+	  font-family: 'Abril Fatface', cursive;
+  }
+  .container {
+	  background: url("http://www.animateit.net/data/media/nov2011/sconfrw2t.gif");
+      padding: 80px 120px;
+	  font-family: 'Alegreya Sans SC', sans-serif;
+	  font-size: 19px;
+	  /*color: #558C89;
+	  font-family: 'Lobster', cursive;*/
+  }
+  .person {
+      border: 20px solid transparent;
+      margin-bottom: 25px;
+      width: 100%;
+      height: 100%;
+      opacity: 0.8;
+  }
+  .person:hover {
+      border-color: yellow;
+  }
+  .carousel-inner img {
+      -webkit-filter: grayscale(0%);
+      filter: grayscale(0%); /* make all photos black and white */ 
+      width: 100%; /* Set width to 100% */
+      margin: auto;
+  }
+  .carousel-caption h3 {
+      color: #DF3D82 !important;
+	  font-family: 'Monoton', cursive;
+	  font-size: 40px;
+  }
+  @media (max-width: 600px) {
+    .carousel-caption {
+      display: none; /* Hide the carousel text when the screen is less than 600 pixels wide */
+    }
+  }
+  .bg-1 {
+      background: #865D5A;
+      color: #7DA16C;
+	  font-family: 'Special Elite', cursive;
+  }
+  .bg-1 h3 {color: #fff;}
+  .bg-1 p {font-style: italic;}
+  .list-group-item:first-child {
+      border-top-right-radius: 0;
+      border-top-left-radius: 0;
+  }
+  .list-group-item:last-child {
+      border-bottom-right-radius: 0;
+      border-bottom-left-radius: 0;
+  }
+  .thumbnail {
+      padding: 0 0 15px 0;
+      border: none;
+      border-radius: 0;
+  }
+  .thumbnail p {
+      margin-top: 15px;
+      color: #2E4053;
+	  font-size: 20px;
+  }
+  .btn {
+      padding: 10px 20px;
+      background-color: red;
+      color: white;
+      border-radius: 50;
+      transition: .2s;
+  }
+  .btn:hover, .btn:focus {
+      border: 10px solid #333;
+      background-color: #831515;
+      color: #000;
+  }
+  .modal-header, h4, .close {
+      background-color: #7CB5C3;
+      color: #C76969 !important;
+      text-align: center;
+      font-size: 40px;
+  }
+  .modal-header, .modal-body {
+      padding: 80px 100px;
+  }
+  .nav-tabs li a {
+      color: #A04000;
+	  font-family: 'Russo One', sans-serif;
+  }
+  #googleMap {
+      width: 100%;
+      height: 400px;
+      -webkit-filter: scale(100%);
+      filter: scale(100%);
+  }  
+  .navbar {
+      font-family: 'Rock Salt', cursive;
+      margin-bottom: 0;
+      background-color: #B03A2E;
+      border: 30;
+      font-size: 12px !important;
+      letter-spacing: 5px;
+      opacity: 0.7;
+  }
+  .navbar li a, .navbar .navbar-brand { 
+      color: black !important;
+  }
+  .navbar-nav li a:hover {
+      color: #EC7063 !important;
+  }
+  .navbar-nav li.active a {
+      color: black !important;
+      background-color: #FADBD8 !important;
+  }
+  .navbar-default .navbar-toggle {
+      border-color: transparent;
+  }
+  .open .dropdown-toggle {
+      color: #fff;
+      background-color: #555 !important;
+  }
+  .dropdown-menu li a {
+      color: #000 !important;
+  }
+  .dropdown-menu li a:hover {
+      background-color: red !important;
+  }
+  footer {
+      background-color: #34495E;
+      color: #979A9A;
+      padding: 32px;
+  }
+  footer a {
+      color: red;
+  }
+  footer a:hover {
+      color: #777;
+      text-decoration: none;
+  }  
+  .form-control {
+      border-radius: 0;
+  }
+  textarea {
+      resize: none;
+  }
+  </style>
+</head>
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
+
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#myPage">Thorns N' Roses</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#myPage">HOME</a></li>
+        <li><a href="#band">MEMBERS</a></li>
+        <li><a href="#tour">MEET THORNS N' ROSES</a></li>
+        <li><a href="#contact">CONTACT US</a></li>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">MORE
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="https://bandcamp.com" target="_blank">Merchandise</a></li>
+            <li><a href="https://www.allmusic.com" target="_blank">Song Releases</a></li>
+            <li><a href="http://www.harmonixmusic.com/blog/?category=rock-band" target="_blank">News</a></li> 
+          </ul>
+        </li>
+        <li><a href="#"><span class="glyphicon glyphicon-search"></span></a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+	  <li data-target="#myCarousel" data-slide-to="3"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+      <div class="item active">
+        <img src="https://levels.io/wp-content/uploads/2016/02/makashiwakui_header.jpg" width="1200" height="700">
+        <div class="carousel-caption">
+          <h3>TOKYO</h3>
+          <p>Thank you, Tokyo - A night we won't forget.</p>
+        </div>      
+      </div>
+	  
+      <div class="item">
+        <img src="https://media.giphy.com/media/Lo804gbB3kNY4/giphy.gif" alt="Chicago" width="1200" height="700">
+        <div class="carousel-caption">
+          <h3>NEW YORK</h3>
+          <p>New York was like a endless roller coaser of thrill! Thank you!</p>
+        </div>      
+      </div>
+
+      <div class="item">
+        <img src="https://media.giphy.com/media/3oEduXeT0j1Bl5uWHK/giphy.gif" alt="Chicago" width="1200" height="700">
+        <div class="carousel-caption">
+          <h3>BARCELONA</h3>
+          <p>Thank you for the beautiful night in Barcelona!</p>
+        </div>      
+      </div>
+    
+      <div class="item">
+        <img src="https://media.giphy.com/media/h34M98d723e5G/giphy.gif" alt="Los Angeles" width="1200" height="700">
+        <div class="carousel-caption">
+          <h3>PARIS</h3>
+          <p>No rain can stop us from having an amzing night in Paris! Thank you!</p>
+        </div>      
+      </div>
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+</div>
+
+<!-- Container (The Band Section) -->
+<div id="band" class="container text-center">
+  <h3>Thorns N' Roses</h3>
+  <p><em>Join The Roses!</em></p>
+  <p>"Music does bring people together. It allows us to experience the same emotions. People everywhere are the same in heart and spirit. No matter what language we speak, what color we are, the form of our politics or the expression of our love and our faith, music proves: We are the same." ~ John Denver ~</p>
+  <br>
+  <div class="row">
+    <div class="col-sm-4">
+      <p class="text-center"><strong>Casey Lynch</strong></p><br>
+      <a href="#demo" data-toggle="collapse">
+        <img src="http://o.oystermag.com/sites/default/files/imagecache/article-image-650x580/images/halsey.jpg" class="img-circle person" alt="Random Name" width="255" height="255">
+      </a>
+      <div id="demo" class="collapse">
+        <p>Lead Singer</p>
+        <p>Casey has risen to the status of 'Goddess of Rock'</p>
+        <p>Original Member</p>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <p class="text-center"><strong>Ashton Irwin</strong></p><br>
+      <a href="#demo2" data-toggle="collapse">
+        <img src="http://i.dailymail.co.uk/i/pix/2014/07/23/article-2702088-1FE3859300000578-442_634x597.jpg" class="img-circle person" alt="Random Name" width="255" height="255">
+      </a>
+      <div id="demo2" class="collapse">
+        <p>Drummer</p>
+        <p>He told people he was a drummer before he even had a set, he was a mental drummer</p>
+        <p>Member since 2014</p>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <p class="text-center"><strong>Damon Black</strong></p><br>
+      <a href="#demo3" data-toggle="collapse">
+        <img src="https://data.whicdn.com/images/138117521/original.jpg" class="img-circle person" alt="Random Name" width="255" height="255">
+      </a>
+      <div id="demo3" class="collapse">
+        <p>Guitarist</p>
+        <p>Damon is the guitarist, bringing the engine to the band</p>
+        <p>Original Member</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Container (TOUR Section) -->
+<div id="tour" class="bg-1">
+  <div class="container">
+    <h3 class="text-center">Meet Thorns N' Roses</h3>
+    <p class="text-center">LOOK AT OUR BAND'S UPCOMING TOUR DATES<br> Buy tickets and come enjoy the fun</p>
+    <ul class="list-group">
+      <li class="list-group-item">June 2018 - The Theater at Madison Square<span class="label label-danger">1,101 seats left</span></li>
+      <li class="list-group-item">July 2018 - XFINITY Theatre<span class="label label-danger">345 seats left</span></li> 
+      <li class="list-group-item">August 2018 - Irving Plaza<span class="badge">Sold Out</span></li> 
+    </ul>
+    
+    <div class="row text-center">
+      <div class="col-sm-4">
+        <div class="thumbnail">
+          <img src="https://78.media.tumblr.com/e02e9105772fad39a52fc53f362503c1/tumblr_onop3qaOuC1w82faso1_500.gif" alt="Paris" width="400" height="300">
+          <p><strong>LA</strong></p>
+          <p>30 June 2018</p>
+          <button class="btn" data-toggle="modal" data-target="#myModal">Buy Tickets</button>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="thumbnail">
+          <img src="https://im-01.gifer.com/80qJ.gif" alt="New York" width="400" height="300">
+          <p><strong>France</strong></p>
+          <p>15 July 2018</p>
+          <button class="btn" data-toggle="modal" data-target="#myModal">Buy Tickets</button>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="thumbnail">
+          <img src="https://thumbs.gfycat.com/BoilingBigAnura-size_restricted.gif" alt="San Francisco" width="400" height="300">
+          <p><strong>Mumbai</strong></p>
+          <p>5 August 2018</p>
+          <button class="btn" data-toggle="modal" data-target="#myModal">Buy Tickets</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">×</button>
+          <h4><span class="glyphicon glyphicon-lock"></span> Buy Tickets</h4>
+        </div>
+        <div class="modal-body">
+          <form role="form">
+            <div class="form-group">
+              <label for="psw"><span class="glyphicon glyphicon-shopping-cart"></span> $45 ticket per person</label>
+              <input type="number" class="form-control" id="psw" placeholder="How many tickets?">
+            </div>
+            <div class="form-group">
+              <label for="usrname"><span class="glyphicon glyphicon-user"></span>Email</label>
+              <input type="text" class="form-control" id="usrname" placeholder="Enter your email">
+            </div>
+              <button type="submit" class="btn btn-block">Payment Done 
+                <span class="glyphicon glyphicon-ok"></span>
+              </button>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="submit" class="btn btn-danger btn-default pull-left" data-dismiss="modal">
+            <span class="glyphicon glyphicon-remove"></span> Cancel, are you sure?
+          </button>
+          <p>Do you need<a href="#">help?</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Container (Contact Section) -->
+<div id="contact" class="container">
+  <h3 class="text-center">Contact Us</h3>
+  <p class="text-center"><em>Send some love to our band!</em></p>
+
+  <div class="row">
+    <div class="col-md-4">
+      <p>Leave a note</p>
+      <p><span class="glyphicon glyphicon-map-marker"></span>Miami, Florida</p>
+      <p><span class="glyphicon glyphicon-phone"></span>Phone #: 1 (305) 509-2459 </p>
+      <p><span class="glyphicon glyphicon-envelope"></span>Email: sandyapersaud@jamaicagateway.net</p>
+    </div>
+    <div class="col-md-8">
+      <div class="row">
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+        </div>
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+        </div>
+      </div>
+      <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea>
+      <br>
+      <div class="row">
+        <div class="col-md-12 form-group">
+          <button class="btn pull-right" type="submit">Send</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br>
+  <h3 class="text-center">#BandFeelings</h3>  
+  <ul class="nav nav-tabs">
+    <li class="active"><a data-toggle="tab" href="#home">Casey Lynch</a></li>
+    <li><a data-toggle="tab" href="#menu1">Ashton Irwin</a></li>
+    <li><a data-toggle="tab" href="#menu2">Damon Black</a></li>
+  </ul>
+
+  <div class="tab-content">
+    <div id="home" class="tab-pane fade in active">
+      <h2>Casey Lynch, Lead Singer</h2>
+      <p>Yeahhh! Can't wait for our next concert! What about you guys? #Lit #ReadyToSing</p>
+    </div>
+    <div id="menu1" class="tab-pane fade">
+      <h2>Ashton Irwin, Drummer</h2>
+      <p>Hey guys I am a little bit sick, but that won't stop me from having fun! #sick #FightingTillTheEnd</p>
+    </div>
+    <div id="menu2" class="tab-pane fade">
+      <h2>Damon Black, Guitarist</h2>
+      <p>Thank you so much for coming to our concert! Can't wait to see you guys next time. #IMY</p>
+    </div>
+  </div>
+</div>
+
+<!-- Add Google Maps -->
+<div id="googleMap"></div>
+<script>
+function myMap() {
+var myCenter = new google.maps.LatLng(25.825667, -80.125829);
+var mapProp = {center:myCenter, zoom:12, scrollwheel:false, draggable:false, mapTypeId:google.maps.MapTypeId.ROADMAP};
+var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+var marker = new google.maps.Marker({position:myCenter});
+marker.setMap(map);
+}
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAwr_bo1JCwSkrTpKLadzjmoJj3Tnz1ZcM&callback=myMap"></script>
+<!--
+To use this code on your website, get a free API key from Google.
+Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
+-->
+
+<!-- Simplly Me-->
+<div id="container-fluid" class="container">
+	<div class="container-fluid bg-2 text-center">
+	  <h3>Who are the Thorns N' Roses?</h3>
+	  <p>Band members have a special bond. A great band is more than just some people working together. It's like a highly specialized army unit, or a winning sports team. A unique combination of elements that becomes stronger together than apart. THAT IS WHO WE ARE!</p>
+	  <a href="http://www.therockbandproject.com/blog/" target="_blank" class="btn btn-default btn-lg">Search</a>
+	</div>
+</div> 
+
+<!-- Footer -->
+<footer class="text-center">
+  <a class="up-arrow" href="#myPage" data-toggle="tooltip" title="TO TOP">
+    <span class="glyphicon glyphicon-chevron-up"></span>
+  </a><br><br>
+  <p>Bootstrap Theme Made By Sandya Persuad with the help of <a href="https://www.w3schools.com" data-toggle="tooltip" title="Visit w3schools">www.w3schools.com</a></p> 
+</footer>
+
+<script>
+$(document).ready(function(){
+  // Initialize Tooltip
+  $('[data-toggle="tooltip"]').tooltip(); 
+  
+  // Add smooth scrolling to all links in navbar + footer link
+  $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 900, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+})
+</script>
+
+</body>
+</html>
