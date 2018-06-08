@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Theme Made By www.w3schools.com - No Copyright -->
+  <title>Bootstrap Theme Company Page</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Raleway+Dots" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Homemade+Apple" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Great+Vibes" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Cabin+Sketch" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Titan+One" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Cookie" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Bangers" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Concert+One" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Caveat" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=IM+Fell+French+Canon+SC" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+  body {
+      font: 400 23px Lato, sans-serif;
+      line-height: 1.8;
+      color: #818181;
+      font-family: 'Bangers', cursive;
+      color: #D35400;
+      background: #E8F8F5;
+  }
+  h2 {
+      font-size: 24px;
+      text-transform: uppercase;
+      color: red;
+      font-weight: 600;
+      margin-bottom: 30px;
+      font-family: 'Concert One', cursive;
+  }
+  h4 {
+      font-size: 19px;
+      line-height: 1.375em;
+      color: #008080;
+      font-weight: 400;
+      margin-bottom: 30px;
+      font-family: 'Orbitron', sans-serif;
+  }  
+  .jumbotron {
+      background: url("http://awesomegifs.com/wp-content/uploads/nintendos-world.gif"); 
+      background-size: 100%;
+      color: #000080;
+      padding: 100px 25px;
+      font-family: 'Titan One', cursive;
+  }
+  .container-fluid {
+      padding: 60px 50px;
+  }
+  .bg-grey {
+      background: url("http://2.media.dorkly.cvcdn.com/96/48/ec0733972a6caa542cb8f95ef4ba79db.gif");
+      background-size: 140%;
+  }
+  .logo-small {
+      color: #f4511e;
+      font-size: 50px;
+  }
+  .logo {
+      background: url("https://media.giphy.com/media/d7CQjzsu2qeMo/200.gif");
+      color: transparent;
+      font-size: 220px;
+  }
+  .thumbnail {
+      padding: 0 0 15px 0;
+      border: none;
+      border-radius: 0;
+  }
+  .thumbnail img {
+      width: 100%;
+      height: 100%;
+      margin-bottom: 10px;
+  }
+  .carousel-control.right, .carousel-control.left {
+      background-image: none;
+      color: #f4511e;
+  }
+  .carousel-indicators li {
+      border-color: #f4511e;
+  }
+  .carousel-indicators li.active {
+      background-color: #f4511e;
+  }
+  .item h4 {
+      font-size: 19px;
+      line-height: 1.375em;
+      font-weight: 400;
+      font-style: italic;
+      margin: 70px 0;
+  }
+  .item span {
+      font-style: normal;
+  }
+  .panel {
+      border: 1px solid #f4511e; 
+      border-radius:0 !important;
+      transition: box-shadow 0.5s;
+  }
+  .panel:hover {
+      box-shadow: 5px 0px 40px rgba(0,0,0, .2);
+  }
+  .panel-footer .btn:hover {
+      border: 5px solid #f4511e;
+      background-color: #FFFF00 !important;
+      color: #f4511e;
+  }
+  .panel-heading {
+      color: #641E16   !important;
+      background-color: #EC7063  !important;
+      padding: 25px;
+      border-bottom: 5px solid transparent;
+      border-top-left-radius: 50px;
+      border-top-right-radius: 50px;
+      border-bottom-left-radius: 50px;
+      border-bottom-right-radius: 50px;
+  }
+  .panel-footer {
+      background-color: #34495E !important;
+  }
+  .panel-footer h3 {
+      font-size: 50px;
+      font-family: 'Homemade Apple', cursive;
+  }
+  .panel-footer h4 {
+      color: #FDFEFE;
+      font-size: 25px;
+      font-family: 'Press Start 2P', cursive;
+  }
+  .panel-footer .btn {
+      margin: 100px 0;
+      background-color: #F5CBA7;
+      color: #fff;
+  }
+  .navbar {
+      margin-bottom: 0;
+      background-color: #0E6251;
+      z-index: 9999;
+      border: 0;
+      font-size: 12px !important;
+      line-height: 1.42857143 !important;
+      letter-spacing: 4px;
+      border-radius: 0;
+      font-family: Montserrat, sans-serif;
+  }
+  .navbar li a, .navbar .navbar-brand {
+      color: #FFBA9E !important;
+      font-family: 'Press Start 2P', cursive;
+  }
+  .navbar-nav li a:hover, .navbar-nav li.active a {
+      color: #f4511e !important;
+      background-color: #AC9EFF !important;
+  }
+  .navbar-default .navbar-toggle {
+      border-color: transparent;
+      color: #fff !important;
+  }
+  footer .glyphicon {
+      font-size: 20px;
+      margin-bottom: 20px;
+      color: #f4511e;
+  }
+  .slideanim {visibility:hidden;}
+  .slide {
+      animation-name: slide;
+      -webkit-animation-name: slide;
+      animation-duration: 1s;
+      -webkit-animation-duration: 1s;
+      visibility: visible;
+  }
+  @keyframes slide {
+    0% {
+      opacity: 0;
+      transform: translateY(70%);
+    } 
+    100% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+  }
+  @-webkit-keyframes slide {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateY(70%);
+    } 
+    100% {
+      opacity: 1;
+      -webkit-transform: translateY(0%);
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .col-sm-4 {
+      text-align: center;
+      margin: 25px 0;
+    }
+    .btn-lg {
+        width: 100%;
+        margin-bottom: 35px;
+    }
+  }
+  @media screen and (max-width: 480px) {
+    .logo {
+        font-size: 150px;
+    }
+  }
+  </style>
+</head>
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#myPage">GameMore</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#about">ABOUT</a></li>
+        <li><a href="#services">SERVICES</a></li>
+        <li><a href="#portfolio">PORTFOLIO</a></li>
+        <li><a href="#pricing">PRICING</a></li>
+        <li><a href="#contact">CONTACT</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="jumbotron text-center">
+  <h1>Moon Corporation</h1> 
+  <p>We specialize in playing and creating GAMES</p> 
+  <form>
+    <div class="input-group">
+      <input type="email" class="form-control" size="50" placeholder="Email Address" required>
+      <div class="input-group-btn">
+        <button type="button" class="btn btn-danger">Join</button>
+      </div>
+    </div>
+  </form>
+</div>
+
+<!-- Container (About Section) -->
+<div id="about" class="container-fluid">
+  <div class="row">
+    <div class="col-sm-8">
+      <h2>What is the "Moon Corporation"</h2><br>
+      <h4>Gaming is the running of specialized applications known as electronic games or video games on game consoles like X-box and Playstation or on personal computers (in which case the activity is known as online gaming). The term "gaming" originated as a synonym for "gambling" although most electronic games today do not involve gambling in the traditional sense.</h4><br>
+      <p>Immersive technology would not be complete without talking about gaming.  Computer games began with simple games, such as Spacewar or Pong, where play was simply directional with a single button to fire/engage/start. Interestingly this is also a website that simple Virtual Reality games are at currently.Computer games can be accessed from this website with a wide variety of technology, from computers, tablets, phones to customised gaming machines, such as the Wii, Xbox or PlayStation.  Many of these now rely on Internet connection and rather than loading games from a CD, they can be purchased from the internet RIGHT HERE.</p>
+     <li><a
+href="http://www.wix.com/html5us/hiker-create-cpc?experiment_id=game%20website%20creator%5Ee%5E47712663940%5E1t1&gclid=CjwKCAjw0ujYBRBDEiwAn7BKt9qk1Qi1nQDdd0mp2fw-S-u0UJnQArNaDDUgsnWBm80pUGneMhJlZRoCF48QAvD_BwE&utm_campaign=213764380%5E10364737060&utm_medium=cpc&utm_source=google" target="_blank">Get in Touch with our main website!</a></li>
+    </div>
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-signal logo"></span>
+    </div>
+  </div>
+</div>
+
+<div class="container text-center">
+  <h2>THE COMPANY MEMBERS</h3>
+  <p><em>Follow the key to SUCCESS!</em></p>
+  <h4>We have created a fictional band website. Lorem ipsum..</h2>
+  <br>
+  <div class="row">
+    <div class="col-sm-4">
+      <p><strong>CEO TODD</strong></p><br>
+      <img src= https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5G5OfG26LhsOLhZovDZc-lbhiOivsCSkLo6NDarAnz3pj0uN4 width="100" length="200"> 
+    </div>
+    <div class="col-sm-4">
+      <p><strong>Chief Executive Hannah</strong></p><br>
+      <img src= http://lifecoach2women.com/main/wp-content/uploads/2015/07/woman-smiling-fists-up-at-desk.jpg width="200" length="100"> 
+    </div>
+    <div class="col-sm-4">
+      <p><strong>Senior Management Veronica</strong></p><br>
+      <img src= https://ae01.alicdn.com/kf/HTB1i.XcSVXXXXXTXpXXq6xXFXXX8/Special-Offer-Pantsuit-Women-s-Suits-Business-Womens-Pantsuit-Hot-Salon-Girl-Office-Uniform-Designs-Women.jpg width="200" length="100"> 
+    </div>
+  </div>
+</div>
+
+<div class="container-fluid bg-grey">
+  <div class="row">
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-globe logo slideanim"></span>
+    </div>
+    <div class="col-sm-8">
+      <h2>Moon Corporation Goal</h2><br>
+      <h4><strong>MISSION:</strong> Our mission as members of the Moon Corporation, operate with only the highest degree of integrity, and rely on the competence and friendliness of each person in our organization to provide entertainment and service to satisfy our customers' wants. Through teamwork, we strive to maximize shareholder value, to be among the leading companies in our industry and to provide opportunities for all while we support and enhance our communities.
+</h4><br>
+      <p><strong>VISION:</strong> Our vision of the Moon Corporation is one of the nation’s leading gaming company. But we’re so much more – a multibillion-dollar company that retains the philosophy of a family-owned business, successfully generating long-term, sustainable growth for our shareholders. 
+
+Since our founding more than 40 years ago, the Moon Corporation has been committed to an operating style built around strong relationship with our customers, our team members and our communities. In our highly competitive industry, this "GameBox" brand of hospitality has come to define us in a unique way, even as we have grown into a nationwide company. 
+</p>
+    </div>
+  </div>
+</div>
+
+<!-- Container (Services Section) -->
+<div id="services" class="container-fluid text-center">
+  <h2>SERVICES</h2>
+  <h4>What does Moon Corporation offer?</h4>
+  <br>
+  <div class="row slideanim">
+    <div class="col-sm-4">
+      <img src= http://digitalspyuk.cdnds.net/16/50/1600x800/landscape-1481544497-best-xbox-one-games-collage.jpg width="200" length="200">
+      <h4>Create Games</h4>
+      <p>When joining the Moon Corporation you can create new games that can become the new best thing!</p>
+    </div>
+    <div class="col-sm-4">
+      <img src= https://static1.squarespace.com/static/55ef0e29e4b099e22cdc9eea/t/5b17f80d2b6a283682055867/1528297490577/?format=750w width="200" length="200">
+      <h4>First Hand on New Games</h4>
+      <p>Buy all the latest new games before it is even out to others!</p>
+    </div>
+    <div class="col-sm-4">
+      <img src= http://static.guim.co.uk/sys-images/Guardian/Pix/pictures/2012/4/27/1335527351013/A-person-plays-a-video-ga-006.jpg width="200" length="200">
+      <h4>Play Games</h4>
+      <p>This is also a platform to play games online, right here!</p>
+    </div>
+  </div>
+  <br><br>
+  <div class="row slideanim">
+    <div class="col-sm-4">
+      <img src= http://images.wisegeek.com/man-in-white-pointing-at-computer-screen-near-seated-man.jpg width="200" length="200">
+      <h4>Become Better</h4>
+      <p>With just some classes you can become a pro at gaming and learn how to makes games!</p>
+    </div>
+    <div class="col-sm-4">
+      <img src= https://www.tes.com/sites/default/files/computer%20class.jpg width="200" length="200">
+      <h4>Teach Others</h4>
+      <p>Do you love teaching others how to play and make games? Well now you can!</p>
+    </div>
+    <div class="col-sm-4">
+      <img src= https://www.domain-b.com/industry/Media/images/newspaper_computer_screen_domain-b.jpg width="200" length="200">
+      <h4 style="color:#303030;">News</h4>
+      <p>Come here to get all the new info on games and more!</p>
+    </div>
+  </div>
+</div>
+
+<!-- Container (Portfolio Section) -->
+<div id="portfolio" class="container-fluid text-center bg-grey">
+  <h2>Portfolio</h2><br>
+  <h4>What Moon Corporation has created!</h4>
+  <div class="row text-center slideanim">
+    <div class="col-sm-4">
+      <div class="thumbnail">
+        <img src="https://68.media.tumblr.com/478bdbb8c3da0d62cf17624983b3d1a9/tumblr_ofxgqimy7v1snegd3o1_500.jpg" alt="Paris" width="400" height="300">
+        <p><strong>Comapny in New York</strong></p>
+        <p>Yes, we built a company in New York!</p>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="thumbnail">
+        <img src="http://www.wisdominteriordecor.com/wp-content/uploads/2017/01/popular-wallpapers-designs-for-home-interiors-awesome-ideas-for-you-1-1200x480.jpg" alt="New York" width="400" height="300">
+        <p><strong>Company in Japan</strong></p>
+        <p>We built a company in Japan for everyone!</p>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="thumbnail">
+        <img src="https://gamesavvy.net/wp-content/uploads/2018/03/pro-gamer-or-athlete-e1522108787414.jpeg" alt="San Francisco" width="400" height="300">
+        <p><strong>Company in Hawaii</strong></p>
+        <p>Yes, that Hawaii company is ours!</p>
+      </div>
+    </div>
+  </div><br>
+  
+  <h2>What our customers say about the Moon Corporation</h2>
+  <div id="myCarousel" class="carousel slide text-center" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+      <div class="item active">
+        <h4>"This company is the best. I have learned so much about creating games!"<br><span>Dean Wright, Student, Comment Box</span></h4>
+      </div>
+      <div class="item">
+        <h4>"There is no other company that can challenge this one in gaming. One word... WOW!"<br><span>Jessica Ray, Salesman, Rep Inc</span></h4>
+      </div>
+      <div class="item">
+        <h4>"Should you join this campany? Yes you should because it offers the greatest info on games and more"<br><span>Chandler Bing, Actor, FriendsAlot</span></h4>
+      </div>
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+</div>
+
+<!-- Container (Pricing Section) -->
+<div id="pricing" class="container-fluid">
+  <div class="text-center">
+    <h2>Pricing</h2>
+    <h4>Choose a payment plan to join the Moon Corporation that works for you</h4>
+  </div>
+  <div class="row slideanim">
+    <div class="col-sm-4 col-xs-12">
+      <div class="panel panel-default text-center">
+        <div class="panel-heading">
+          <h1>Regular</h1>
+        </div>
+        <div class="panel-body">
+          <p><strong>25%</strong> Latest Games you get</p>
+          <p><strong>25%</strong> Profit from games you create</p>
+          <p><strong>25%</strong> Classes you can take</p>
+          <p><strong>25%</strong> Teach classes</p>
+          <p><strong>Endless</strong> News</p>
+        </div>
+        <div class="panel-footer">
+          <h3>$25</h3>
+          <h4>per month</h4>
+               <li><a      href="https://www.moneygram.com/us/en/money-orders" target="_blank">Click Here To Pay!</a></li>
+        </div>
+      </div>      
+    </div>     
+    <div class="col-sm-4 col-xs-12">
+      <div class="panel panel-default text-center">
+        <div class="panel-heading">
+          <h1>Pro</h1>
+        </div>
+        <div class="panel-body">
+          <p><strong>50%</strong> Latest Games you get</p>
+          <p><strong>50%</strong> Profit from games you create</p>
+          <p><strong>50%</strong> Classes you can take</p>
+          <p><strong>50%</strong> Teaching classes</p>
+          <p><strong>Endless</strong> News</p>
+        </div>
+        <div class="panel-footer">
+          <h3>$50</h3>
+          <h4>per month</h4>
+           <li><a      href="https://www.moneygram.com/us/en/money-orders" target="_blank">Click Here To Pay!</a></li>
+        </div>
+      </div>      
+    </div>       
+    <div class="col-sm-4 col-xs-12">
+      <div class="panel panel-default text-center">
+        <div class="panel-heading">
+          <h1>Premium</h1>
+        </div>
+        <div class="panel-body">
+          <p><strong>100%</strong> Latest Games you get</p>
+          <p><strong>100%</strong> Profit from games you create</p>
+          <p><strong>100%</strong> Classes you can take</p>
+          <p><strong>100%</strong> Teaching classes</p>
+          <p><strong>Endless</strong> News</p>
+        </div>
+        <div class="panel-footer">
+          <h3>$75</h3>
+          <h4>per month</h4>
+          <li><a      href="https://www.moneygram.com/us/en/money-orders" target="_blank">Click Here To Pay!</a></li>
+        </div>
+      </div>      
+    </div>    
+  </div>
+</div>
+
+<!-- Container (Contact Section) -->
+<h2>Contact Us</h2>
+<form action="http://www.SnapHost.com/captcha/send.aspx" id="ContactUsCaptchaWebForm" method="post" onsubmit="return ValidateForm(this);" target="_top">
+<input name="skip_WhereToSend" type="hidden" value="sandyapersaud@jamaicagateway.net" />
+<input name="skip_SnapHostID" type="hidden" value="LFSEWTE62L3M" />
+<input name="skip_WhereToReturn" type="hidden" value="http://www.YourWebsiteAddress.com/ThankYouPage.htm" />
+<input name="skip_Subject" type="hidden" value="Contact Us Form" />
+<input name="skip_ShowUsersIp" type="hidden" value="1" />
+<input name="skip_SendCopyToUser" type="hidden" value="1" />
+<script type="text/javascript">
+function ValidateForm(frm) {
+if (frm.Name.value == "") {alert('Name is required.');frm.Name.focus();return false;}
+if (frm.FromEmailAddress.value == "") {alert('Email address is required.');frm.FromEmailAddress.focus();return false;}
+if (frm.FromEmailAddress.value.indexOf("@") < 1 || frm.FromEmailAddress.value.indexOf(".") < 1) {alert('Please enter a valid email address.');frm.FromEmailAddress.focus();return false;}
+if (frm.Comments.value == "") {alert('Please enter comments or questions.');frm.Comments.focus();return false;}
+if (frm.skip_CaptchaCode.value == "") {alert('Enter web form code.');frm.skip_CaptchaCode.focus();return false;}
+return true; }
+function ReloadCaptchaImage(captchaImageId) {
+var obj = document.getElementById(captchaImageId);
+var src = '' + obj.src;
+obj.src = '';
+var date = new Date();
+var pos = src.indexOf('&rad=');
+if (pos >= 0) { src = src.substr(0, pos); }
+obj.src = src + '&rad=' + date.getTime();
+return false; }
+</script>
+<table border="0" cellpadding="5" cellspacing="0" width="600">
+<tr>
+<td><b>Name*:</b></td>
+<td><input name="Name" type="text" maxlength="60" style="width:350px;" /></td>
+</tr><tr>
+<td><b>Phone number:</b></td>
+<td><input name="PhoneNumber" type="text" maxlength="43" style="width:350px;" /></td>
+</tr><tr>
+<td><b>Email address*:</b></td>
+<td><input name="FromEmailAddress" type="text" maxlength="60" style="width:350px;" /></td>
+</tr><tr>
+<td><b>Comments and questions*:</b></td>
+<td><textarea name="Comments" rows="7" cols="40" style="width:350px;"></textarea></td>
+</tr><tr>
+<td colspan="2" align="center"> <br />
+<table border="0" cellpadding="0" cellspacing="0">
+<tr><td colspan="2" style="padding-bottom:18px;">
+<!-- Please check our ProCaptcha service which is ad-free:
+http://www.SnapHost.com/captcha/ProCaptchaOverview.aspx -->
+<a href="http://www.snaphost.com/captcha" alt="what is a captcha code" title="what is a captcha code">
+what is a captcha code</a></td></tr>
+<tr valign="top"><td> <i>Enter web form code*:</i>
+<input name="skip_CaptchaCode" type="text" style="width:80px;" maxlength="6" />
+</td><td>
+<a href="http://www.snaphost.com/captcha/ReadyForms/ContactUsForm.aspx"><img id="CaptchaImage" alt="Contact Us form" title="HTML code for Contact Us form"
+style="margin-left:20px;"
+src="http://www.SnapHost.com/captcha/CaptchaImage.aspx?id=LFSEWTE62L3M&ImgType=2" /></a><br />
+<a href="#" onclick="return ReloadCaptchaImage('CaptchaImage');"><span style="font-size:12px;">reload image</span></a> </td></tr>
+</table> <br />
+* - required fields. &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+<input name="skip_Submit" type="submit" value="Submit" />
+</td></tr>
+</table><br />
+</form>
+
+<style>
+.nav-tabs li a {
+    color: #777;
+}
+</style>
+
+<h3 class="text-center">Company Blog</h3> 
+<ul class="nav nav-tabs">
+  <li class="active"><a data-toggle="tab" href="#home">Mike</a></li>
+  <li><a data-toggle="tab" href="#menu1">Chandler</a></li>
+  <li><a data-toggle="tab" href="#menu2">Peter</a></li>
+</ul>
+
+<div class="tab-content">
+  <div id="home" class="tab-pane fade in active">
+    <h2>Todd, CEO</h2>
+    <p>Lets all work together to great a successful company.</p>
+  </div>
+  <div id="menu1" class="tab-pane fade">
+    <h2>Hannah, Chief Executive</h2>
+    <p>Join the best company to learn more about gaming!</p>
+  </div>
+  <div id="menu2" class="tab-pane fade">
+    <h2>Veronica, Senior Management </h2>
+    <p>Today's progress was amazing... One more step till we finish a new game for everyone!</p>
+  </div>
+</div>
+
+<!-- Add Google Maps -->
+<div id="googleMap" style="height:400px;width:100%;"></div>
+<script>
+function myMap() {
+var myCenter = new google.maps.LatLng(40.730610, -73.935242);
+var mapProp = {center:myCenter, zoom:12, scrollwheel:false, draggable:false, mapTypeId:google.maps.MapTypeId.ROADMAP};
+var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+var marker = new google.maps.Marker({position:myCenter});
+marker.setMap(map);
+}
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?callback=myMap"></script>
+<!--
+To use this code on your website, get a free API key from Google.
+Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
+-->
+
+<footer class="container-fluid text-center">
+  <a href="#myPage" title="To Top">
+    <span class="glyphicon glyphicon-chevron-up"></span>
+  </a>
+  <p>Moon Corporation and Bootstrap Theme Made By <a href="https://www.w3schools.com" title="Visit w3schools">www.w3schools.com</a></p>
+</footer>
+
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links in navbar + footer link
+  $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 900, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+  
+  $(window).scroll(function() {
+    $(".slideanim").each(function(){
+      var pos = $(this).offset().top;
+
+      var winTop = $(window).scrollTop();
+        if (pos < winTop + 600) {
+          $(this).addClass("slide");
+        }
+    });
+  });
+})
+</script>
+
+</body>
+</html>
